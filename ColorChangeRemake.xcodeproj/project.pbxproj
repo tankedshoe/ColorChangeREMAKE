@@ -54,14 +54,38 @@
 		7758DA541F8D087600EC6480 /* ColorChangeRemake */ = {
 			isa = PBXGroup;
 			children = (
-				7758DA551F8D087600EC6480 /* AppDelegate.swift */,
-				7758DA571F8D087600EC6480 /* ViewController.swift */,
-				7758DA591F8D087600EC6480 /* Main.storyboard */,
-				7758DA5C1F8D087600EC6480 /* Assets.xcassets */,
-				7758DA5E1F8D087600EC6480 /* LaunchScreen.storyboard */,
-				7758DA611F8D087600EC6480 /* Info.plist */,
+				7758DA671F8D189300EC6480 /* Controller */,
+				7758DA681F8D18AC00EC6480 /* View */,
+				7758DA691F8D18CA00EC6480 /* Resources */,
 			);
 			path = ColorChangeRemake;
+			sourceTree = "<group>";
+		};
+		7758DA671F8D189300EC6480 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7758DA551F8D087600EC6480 /* AppDelegate.swift */,
+				7758DA571F8D087600EC6480 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7758DA681F8D18AC00EC6480 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7758DA591F8D087600EC6480 /* Main.storyboard */,
+				7758DA5E1F8D087600EC6480 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7758DA691F8D18CA00EC6480 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7758DA5C1F8D087600EC6480 /* Assets.xcassets */,
+				7758DA611F8D087600EC6480 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ColorChangeRemake/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ColorChangeRemake/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.ColorChangeRemake;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ColorChangeRemake/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ColorChangeRemake/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.ColorChangeRemake;
 				PRODUCT_NAME = "$(TARGET_NAME)";

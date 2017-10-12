@@ -42,6 +42,21 @@ class ViewController: UIViewController {
         return newColor
     }
     
+    @IBOutlet weak var firstSwitch: UISwitch!
+    
+    
+    @IBAction func `switch`(_ sender: Any)
+    {
+        if firstSwitch.isOn
+        {
+            Button.isHidden = true
+        }
+        else
+        {
+            Button.isHidden = false
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

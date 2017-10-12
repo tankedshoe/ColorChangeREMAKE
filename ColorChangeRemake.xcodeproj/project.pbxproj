@@ -13,6 +13,7 @@
 		7758DA5D1F8D087600EC6480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7758DA5C1F8D087600EC6480 /* Assets.xcassets */; };
 		7758DA601F8D087600EC6480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7758DA5E1F8D087600EC6480 /* LaunchScreen.storyboard */; };
 		777B02481F8FB9EB00D4F2CA /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B02471F8FB9EB00D4F2CA /* SecondScreenController.swift */; };
+		777B024B1F8FBEE300D4F2CA /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B024A1F8FBEE300D4F2CA /* ColorTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7758DA5F1F8D087600EC6480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7758DA611F8D087600EC6480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		777B02471F8FB9EB00D4F2CA /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
+		777B024A1F8FBEE300D4F2CA /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		7758DA541F8D087600EC6480 /* ColorChangeRemake */ = {
 			isa = PBXGroup;
 			children = (
+				777B02491F8FBEA400D4F2CA /* Model */,
 				7758DA671F8D189300EC6480 /* Controller */,
 				7758DA681F8D18AC00EC6480 /* View */,
 				7758DA691F8D18CA00EC6480 /* Resources */,
@@ -89,6 +92,14 @@
 				7758DA611F8D087600EC6480 /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		777B02491F8FBEA400D4F2CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				777B024A1F8FBEE300D4F2CA /* ColorTools.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				7758DA581F8D087600EC6480 /* ViewController.swift in Sources */,
 				7758DA561F8D087600EC6480 /* AppDelegate.swift in Sources */,
 				777B02481F8FB9EB00D4F2CA /* SecondScreenController.swift in Sources */,
+				777B024B1F8FBEE300D4F2CA /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

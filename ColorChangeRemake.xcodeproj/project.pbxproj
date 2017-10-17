@@ -12,6 +12,8 @@
 		7758DA5B1F8D087600EC6480 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7758DA591F8D087600EC6480 /* Main.storyboard */; };
 		7758DA5D1F8D087600EC6480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7758DA5C1F8D087600EC6480 /* Assets.xcassets */; };
 		7758DA601F8D087600EC6480 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7758DA5E1F8D087600EC6480 /* LaunchScreen.storyboard */; };
+		7766C5C81F94FF5F004A4C9C /* ThirdScreenontollerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766C5C71F94FF5F004A4C9C /* ThirdScreenontollerViewController.swift */; };
+		7766C5CC1F9504C3004A4C9C /* FourthScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7766C5CB1F9504C3004A4C9C /* FourthScreenController.swift */; };
 		777B02481F8FB9EB00D4F2CA /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B02471F8FB9EB00D4F2CA /* SecondScreenController.swift */; };
 		777B024B1F8FBEE300D4F2CA /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777B024A1F8FBEE300D4F2CA /* ColorTools.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +26,8 @@
 		7758DA5C1F8D087600EC6480 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7758DA5F1F8D087600EC6480 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7758DA611F8D087600EC6480 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7766C5C71F94FF5F004A4C9C /* ThirdScreenontollerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdScreenontollerViewController.swift; sourceTree = "<group>"; };
+		7766C5CB1F9504C3004A4C9C /* FourthScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthScreenController.swift; sourceTree = "<group>"; };
 		777B02471F8FB9EB00D4F2CA /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
 		777B024A1F8FBEE300D4F2CA /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +76,8 @@
 				7758DA551F8D087600EC6480 /* AppDelegate.swift */,
 				7758DA571F8D087600EC6480 /* ViewController.swift */,
 				777B02471F8FB9EB00D4F2CA /* SecondScreenController.swift */,
+				7766C5C71F94FF5F004A4C9C /* ThirdScreenontollerViewController.swift */,
+				7766C5CB1F9504C3004A4C9C /* FourthScreenController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,7 +181,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7758DA581F8D087600EC6480 /* ViewController.swift in Sources */,
+				7766C5CC1F9504C3004A4C9C /* FourthScreenController.swift in Sources */,
 				7758DA561F8D087600EC6480 /* AppDelegate.swift in Sources */,
+				7766C5C81F94FF5F004A4C9C /* ThirdScreenontollerViewController.swift in Sources */,
 				777B02481F8FB9EB00D4F2CA /* SecondScreenController.swift in Sources */,
 				777B024B1F8FBEE300D4F2CA /* ColorTools.swift in Sources */,
 			);

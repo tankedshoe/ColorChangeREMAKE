@@ -63,6 +63,31 @@
             </objects>
             <point key="canvasLocation" x="-98.400000000000006" y="118.22660098522168"/>
         </scene>
+        <!--Third Screenontoller View Controller-->
+        <scene sceneID="8xg-EJ-svx">
+            <objects>
+                <viewController id="B7w-U0-F1Y" customClass="ThirdScreenontollerViewController" customModule="ColorChangeRemake" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xWa-wB-Kuw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9N-gY-nIn">
+                                <rect key="frame" x="145" y="421" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="OAd-HZ-0dO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="363-eP-78h"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A5v-8M-Le6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-708" y="-140"/>
+        </scene>
         <!--Second Screen Controller-->
         <scene sceneID="vcg-BN-HfK">
             <objects>
@@ -88,5 +113,23 @@
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="34.729064039408868"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="VC4-DZ-KHN">
+            <objects>
+                <viewController id="ZTQ-it-13C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bxz-Pn-VPk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="xqR-vk-B5E"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tmt-KY-mPu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="937" y="89"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="OAd-HZ-0dO"/>
+    </inferredMetricsTieBreakers>
 </document>

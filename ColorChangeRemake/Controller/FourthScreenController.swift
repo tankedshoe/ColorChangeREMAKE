@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class FourthScreenController: UIViewController {
 
@@ -31,5 +32,44 @@ class FourthScreenController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    private var soundPlayer : AVAudioPlayer?
+    private var imageCounter : Int = 0
+    private lazy var color : ColorTools = ColorTools()
+    
+    
+    
+    @IBOutlet weak var ButtonUn: UIButton!
+    @IBOutlet weak var ButtonDeux: UIButton!
+    @IBOutlet weak var Slider: UISlider!
+    @IBOutlet weak var ImageView: UIImageView!
+    
+    @IBAction func Switch(_ sender: Any) {
+        switchImage()
+    }
+    
+    private func switchImage()
+    {
+        if (imageCounter > 2)
+        {
+            imageCounter = 0
+        }
+        
+        if (imageCounter == 0)
+        {
+            ImageView.image = UIImage(named: "thingphotoUN")
+        }
+        else if (imageCounter == 1)
+        {
+            ImageView.image = UIImage(named: "thingphotoDEUX")
+        }
+        else if (imageCounter == 2)
+        {
+            ImageView.image = UIImage(named: "thingphotoTROIS")
+        }
+        
+        imageCounter += 1
+    }
 }
+
+

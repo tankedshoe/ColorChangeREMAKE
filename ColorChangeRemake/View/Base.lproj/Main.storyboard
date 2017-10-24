@@ -144,6 +144,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ufz-1d-vw6">
                                 <rect key="frame" x="128" y="364" width="118" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slidingSound:" destination="ZTQ-it-13C" eventType="valueChanged" id="w0n-of-38z"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJX-CX-eae">
                                 <rect key="frame" x="133" y="277" width="108" height="30"/>
@@ -152,6 +155,11 @@
                                 <connections>
                                     <action selector="Switch:" destination="ZTQ-it-13C" eventType="touchUpInside" id="FRO-mA-Xcp"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qG7-1u-YJA">
+                                <rect key="frame" x="122" y="315" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play/Pause"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -162,6 +170,7 @@
                         <outlet property="ButtonUn" destination="6Hd-DM-FBw" id="QeZ-YM-pkC"/>
                         <outlet property="ImageView" destination="K00-g4-KP1" id="2FQ-Bo-1N6"/>
                         <outlet property="Slider" destination="Ufz-1d-vw6" id="Gvu-8c-5HF"/>
+                        <outlet property="playPause" destination="qG7-1u-YJA" id="5vs-ia-EBf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tmt-KY-mPu" userLabel="First Responder" sceneMemberID="firstResponder"/>

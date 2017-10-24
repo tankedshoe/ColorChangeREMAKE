@@ -43,12 +43,28 @@ class FourthScreenController: UIViewController {
     @IBOutlet weak var ButtonDeux: UIButton!
     @IBOutlet weak var Slider: UISlider!
     @IBOutlet weak var ImageView: UIImageView!
+    @IBOutlet weak var playPause: UIButton!
     
     @IBAction func Switch(_ sender: Any) {
         switchImage()
     }
     
-    private func switchImage()
+    private func playMusicFile()
+    {
+        if let isPlaying = soundPlayer?.isPlaying
+        {
+            if (isPlaying)
+            {
+                soundPlayer?.pause()
+            }
+            else
+            {
+                soundPlayer?.play()
+            }
+        }
+    }
+    
+    private func switchImage() -> Void
     {
         if (imageCounter > 2)
         {
@@ -69,6 +85,35 @@ class FourthScreenController: UIViewController {
         }
         
         imageCounter += 1
+    }
+    
+    private func loadAudioFile() -> Void
+    {
+        if let soundURL = NSDataAsset(name: "thingmusic")
+        {
+            do
+            {
+                try! AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+                try! AVAudioSession.sharedInstance().setActive(true)
+                try soundPlayer = AVAudioPlayer(data: soundURL.data, fileTypeHint: AVFileType.mp3.rawValue)
+                Slider.maximumValue = Float ((soundPlayer?.duration)!)
+                Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: (#selector(self.updateSlider)), userInfo: nil, repeats: true)
+            }
+            catch
+            {
+                print("Audio File Load Error")
+            }
+        }
+    }
+    
+    @objc private func updateSlider() -> Void
+    {
+        Slider.value = Float ((soundPlayer?.currentTime)!)
+    }
+    @IBAction func slidingSound(_ sender: UISlider)
+    {
+        let seekTime = Double (Slider.value)
+        soundPlayer?.currentTime = seekTime
     }
 }
 
